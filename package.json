@@ -3,21 +3,29 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "acorn": "^6.1.1",
-    "ajv": "^6.9.2",
-    "extend": "^3.0.2",
-    "lodash": "^4.17.11",
-    "merge": "^1.2.1",
-    "react": "^16.4.1",
-    "react-dev-utils": "^7.0.3",
-    "react-dom": "^16.8.3",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4"
+    "bloc-jams-react": "file:",
+    "lodash": "^4.17.21",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router": "^7.0.2",
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
+import {Link} from 'react-router';
 import albumData from './../data/albums';
 
 class Library extends Component {
