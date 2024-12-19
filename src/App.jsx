@@ -1,29 +1,21 @@
-import React, { Component } from 'react';
-import { Route, Link } from 'react-router';
 import './App.css';
-import Landing from './components/Landing';
-import Library from './components/Library';
-import Album from './components/Album';
+import React from 'react';
+import { Route, Routes } from 'react-router';
+import Landing from './pages/Landing';
+import Library from './pages/Library';
+import Album from './pages/Album';
+import Layout from './components/Layout';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <nav>
-            <Link to='/'>Landing</Link>  
-            <Link to='/library'>Library</Link>
-          </nav>
-          <div id='page-title'><h1 className='font-effect-3d'>Bloc Jams</h1></div>
-        </header>
-        <main>
-          <Route exact path="/" component={Landing} />
-          <Route path="/library" component={Library} />
-          <Route path="/album/:slug" component={Album} />
-        </main>
-      </div>
-    );
-  }
-}
+const App = () => {
+  return (
+    <Routes>
+      <Route to={ '/' } element={ <Layout /> } >
+        <Route index element={ <Landing /> } />
+        <Route path={ '/library' } element={ <Library /> } />
+        <Route path={ '/album/:slug' } element={ <Album /> } />
+      </Route>
+    </Routes>
+  );
+};
 
 export default App;

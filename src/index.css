@@ -16,11 +16,6 @@ h1 {
   font-size: 3em;
 }
 
-#page-title {
-  position: relative;
-  z-index: 4;
-}
-
 a {
   padding: 5px;
   font-weight: 600;
@@ -28,15 +23,6 @@ a {
 
 a:visited {
   color: blueviolet;
-}
-
-nav {
-  background-color: #282828;
-  padding: 25px;
-  text-align: left;
-  position: fixed;
-  top: 0;
-  width: 94%;
 }
 
 img {
