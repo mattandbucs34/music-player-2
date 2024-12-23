@@ -1,19 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Eagle+Lake&effect=3d');
 
 body {
+  height: 100vh;
+  width: 100vw;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Montserrat", "Roboto Flex", Helvetica, Arial, sans-serif;
   background-color: beige;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Eagle Lake', cursive;
-  letter-spacing: .25em;
+#root {
+  height: 100%;
 }
 
-h1 {
-  font-size: 3em;
+.logo-text {
+  font-family: 'Eagle Lake', cursive;
+  letter-spacing: .25rem;
+  font-size: 3rem;
 }
 
 a {
@@ -26,60 +30,19 @@ a:visited {
 }
 
 img {
-  border-radius: 25px;
-  margin-top: 20px;
+  border-radius: 0.25rem;
 }
 
 #album-cover-art {
-  margin-top: 20px;
-  border-radius: 25px;
+  border-radius: 0.25rem;
 }
 
 #release-info {
   font-weight: bold;
   font-family: 'Eagle Lake', cursive;
+  margin-bottom: 1rem;
 }
 
 td {
   border: solid 1px lightgrey;
-}
-
-#song-list {
-  margin: auto;
-  border: solid 1px lightgrey;
-}
-
-#song-title-column {
-  width: 7em;
-}
-
-#song-title {
-  padding-left: 10px;
-  text-align: left;
-}
-
-div .ion-md-volume-low {
-  position: relative;
-  width: 50%;
-  float: left;
-}
-
-div .ion-md-volume-high {
-  position: relative;
-}
-
-#play-pause {
-  margin: 5px 5px;
-}
-
-.player-bar {
-  background-color: rgba(216,216,216, .2);
-  position: -webkit-sticky;
-  position: sticky;
-  left: 85%;
-  bottom: 5%;
-  width: 200px;
-  border-radius: 25px;
-  border: 1px solid black;
-  padding: 15px 0;
 }
